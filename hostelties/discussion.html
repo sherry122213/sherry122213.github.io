@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostelites - Discussion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <img src="dis-header.jpg" alt="Hostelites Header Image" class="img-fluid mb-4">
+            <h1 class="display-4">Hostelites Discussion Forum</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="discussion.html">Discussion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="complaints.html">Complaints</a></li>
+                        <li class="nav-item"><a class="nav-link" href="food-menu.html">Food Menu</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5 animate__animated animate__fadeIn">
+        <h2 class="text-center mb-4">Join the Discussion</h2>
+
+        <!-- Discussion Form -->
+        <form id="discussion-form">
+            <div class="form-group">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Message</button>
+        </form>
+
+        <hr>
+
+        <!-- Display Posted Messages -->
+        <div id="posted-messages" class="mt-4">
+            <!-- Messages will be displayed here -->
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 Hostelites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="discussion.js"></script>
+</body>
+</html>
+

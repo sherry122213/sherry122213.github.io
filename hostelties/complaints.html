@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostelites - Complaints</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce38a;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #f38181;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2, p {
+            margin-bottom: 0.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .complaint-form {
+            background-color: #fcedda;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #70a1ff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .complaints-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .complaint {
+            background-color: #fcedda;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        footer {
+            background-color: #f38181;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script src="complaints.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Hostelites Complaints</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="discussion.html">Discussion</a></li>
+                    <li><a href="complaints.html">Complaints</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Complaint Submission Form -->
+        <div class="complaint-form">
+            <h2 class="text-center mb-4">Submit Your Complaint</h2>
+            <form id="complaint-form">
+                <label for="complaint">Your Complaint:</label>
+                <textarea id="complaint" name="complaint" rows="4" required></textarea>
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </div>
+
+        <!-- List of Complaints -->
+        <h2 class="text-center mb-4">Complaints List</h2>
+        <ul class="complaints-list" id="complaints-list">
+            <!-- Complaints will be displayed here -->
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Hostelites. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
